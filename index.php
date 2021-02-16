@@ -20,7 +20,7 @@
 <!-- Signup Form -->
 <form id="signup-form" method="post" action="index.php">
     <input type="email" name="email" id="email" placeholder="Email Address" />
-    <input type="number" name="number" id="number" placeholder="Offer value ($)" min="20"/>
+    <input type="number" name="number" id="number" placeholder="Offer value ($)" min="20" step="1"/>
     <input type="submit" value="Send offer" />
 </form>
 
