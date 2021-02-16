@@ -27,7 +27,9 @@
 <!-- Footer -->
 <footer id="footer">
     <ul class="copyright">
-        <li>&copy; <a href="https://opuseo.com" target="_blank">Opuseo</a>.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        <li>&copy; <a href="https://opuseo.com" target="_blank">Opuseo</a>.</li>
+        <li><?php echo date('Y'); ?></li>
+        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
     </ul>
 </footer>
 
