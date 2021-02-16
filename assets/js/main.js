@@ -1,9 +1,3 @@
-/*
-	Eventually by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function() {
 
 	"use strict";
@@ -137,3 +131,12 @@
 		})();
 
 })();
+
+String.prototype.capitalize = function(){
+	return this.replace(/(^|\s)([a-z])/g,
+		function(m, p1, p2) {
+			return p1 + p2.toUpperCase();
+		});
+};
+
+document.getElementById('domain').innerHTML = window.location.hostname.capitalize();

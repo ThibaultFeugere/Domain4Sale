@@ -1,16 +1,18 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>{{Domain}} for sale !</title>
+    <title>Domain is for sale !</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description"
+          content="This domain is for sale">
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body class="is-preload">
 
 <!-- Header -->
 <header id="header">
-    <h1>{{Domain}} is for sale !</h1>
+    <h1><span id="domain"></span> is for sale !</h1>
     <p>You are interested in this domain ?<br />
         Make an offer !</p>
 </header>
