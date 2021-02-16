@@ -833,7 +833,8 @@ button,
       flex-direction: column; }
       #signup-form input[type="type"],
       #signup-form input[type="password"],
-      #signup-form input[type="email"] {
+      #signup-form input[type="email"],
+      #signup-form input[type="number"]{
         width: 100%; }
       #signup-form > * {
         margin: 1.25em 0 0 0; }
