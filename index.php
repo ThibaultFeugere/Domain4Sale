@@ -46,13 +46,14 @@
 </body>
 </html>
 <?php
+require_once('vars.php');
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['email']) && !empty($_POST['email'])) {
         if (isset($_POST['number']) && !empty($_POST['number'])) {
             if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
                 if ($_POST['number'] >= 20) {
                     $message = "Offre d'un montant de " . $_POST['number'] . "$ par " . $_POST['email'];
-                    mail('{{Email}}','Offre {{Domain}}', $message);
+                    mail($email,'Offre {{Domain}}', $message);
                 }
             }
         }
