@@ -52,8 +52,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_POST['number']) && !empty($_POST['number'])) {
             if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
                 if ($_POST['number'] >= 20) {
-                    $message = "Offre d'un montant de " . $_POST['number'] . "$ par " . $_POST['email'];
-                    mail($email,'Offre {{Domain}}', $message);
+                    $subject = "Offre sur le domaine : " . $_SERVER['SERVER_NAME'];
+                    $message = "Offre d'un montant de " . $_POST['number'] . " $ par " . $_POST['email'] . "<br>Adresse IP : " . $_SERVER['REMOTE_ADDR'];
+                    mail($email, $subject, $message);
                 }
             }
         }
