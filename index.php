@@ -33,6 +33,16 @@
 
 <!-- Scripts -->
 <script src="assets/js/main.js"></script>
+<script>
+    String.prototype.capitalize = function(){
+        return this.replace(/(^|\s)([a-z])/g,
+            function(m, p1, p2) {
+                return p1 + p2.toUpperCase();
+            });
+    };
+
+    document.getElementById('domain').innerHTML = window.location.hostname.capitalize();
+</script>
 </body>
 </html>
 <?php
