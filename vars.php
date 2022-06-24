@@ -1,2 +1,2 @@
 <?php
-$email = 'domain@opuseo.com';
+$email = 'your@domain.com';
